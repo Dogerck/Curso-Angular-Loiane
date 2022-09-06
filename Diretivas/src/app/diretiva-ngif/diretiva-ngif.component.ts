@@ -12,8 +12,9 @@ export class DiretivaNgifComponent implements OnInit {
   mostrarCursos: boolean = false;
 
   onMostrarCursos() {
-    this. mostrarCursos = !this. mostrarCursos;
+    this.mostrarCursos = !this. mostrarCursos;
   }
+  
 
   constructor() { }
 
