@@ -7,7 +7,8 @@
     </article>
     <article>
         <h3>Property Binding</h3>
-        <img [src]="  urlImagem  ">
+        <img [src]="urlImagem">
+        <img src="{{ urlImagem }}">
     </article>
     <article>
         <h3> Class e Style Binding </h3>
@@ -55,7 +56,7 @@
 
                 <span
                     (mouseover)="OnMouseOverOut()"
-                    (mouseiut)="OnMouseOverOut()"
+                    (mouseout)="OnMouseOverOut()"
                     [class.highlight] = "isMouseOver">
                     Passe o mouse sobre mim
                 </span>
@@ -90,7 +91,7 @@
         </div>
     </article>
 </section> -->
-<section>
+<!-- <section>
     <article>
         <h3>Input/Output Properties</h3>
 
@@ -103,4 +104,4 @@
 
     </article>
 
-</section>
+</section> -->
