@@ -15,9 +15,11 @@ import {
   templateUrl: './ciclo.component.html',
   styleUrls: ['./ciclo.component.scss']
 })
-export class CicloComponent implements OnInit {
+export class CicloComponent implements OnInit, OnChanges, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked, OnDestroy{
 
   @Input() valorInicial: number = 10;
+
+
 
   constructor() {
     this.log('constructor');
@@ -31,28 +33,28 @@ export class CicloComponent implements OnInit {
     this.log('ngOnInit');
   }
   
-  DoCheck() {
-    this.log('DoCheck');
+  ngDoCheck() {
+    this.log('ngDoCheck');
   }
 
-  AfterContentInit(){
-    this.log('AfterContentInit');
+  ngAfterContentInit(){
+    this.log('ngAfterContentInit');
   }
 
-  AfterContentChecked(){
-    this.log('AfterContentChecked');
+  ngAfterContentChecked(){
+    this.log('ngAfterContentChecked');
   }
 
-  AfterViewInit(){
-    this.log('AfterViewInit');
+  ngAfterViewInit(){
+    this.log('ngAfterViewInit');
   }
 
-  AfterViewChecked(){
-    this.log('AfterViewChecked');
+  ngAfterViewChecked(){
+    this.log('ngAfterViewChecked');
   }
 
-  OnDestroy(){
-    this.log('OnDestroy');
+  ngOnDestroy(){
+    this.log('ngOnDestroy');
   }
 
   private log(hook: string) {

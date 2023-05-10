@@ -15,17 +15,18 @@ export class OutputPropertyComponent implements OnInit {
 
   incrementa (): void {
     this.campoValorInput.nativeElement.value++;
-    this.mudouValor.emit( {novoValor: this.valor} )
+    this.mudouValor.emit( {novoValor: this.valor})
   }
-  decrementa () {
+  decrementa (): void {
     this.campoValorInput.nativeElement.value--;
-    this.mudouValor.emit( {novoValor: this.valor} )
+    this.mudouValor.emit( {novoValor: this.valor})
   }
   
 
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
 }
