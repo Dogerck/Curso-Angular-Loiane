@@ -10,6 +10,10 @@ export class DiretivaNgStyleComponent implements OnInit {
 
   ativo: boolean = false;
   tamanhoFont: number = 10;
+ 
+  mudarAtivo() {
+    this.ativo = !this.ativo;
+  }
 
   constructor() { }
 

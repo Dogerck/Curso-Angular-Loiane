@@ -9,6 +9,9 @@ import { DiretivaNgclassComponent } from './diretiva-ngclass/diretiva-ngclass.co
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatIconModule} from '@angular/material/icon';
 import { DiretivaNgStyleComponent } from './diretiva-ng-style/diretiva-ng-style.component';
+import { FormsModule } from '@angular/forms';
+import { OperadorElvisComponent } from './operador-elvis/operador-elvis.component';
+import { ExemploNgContentComponent } from './exemplo-ng-content/exemplo-ng-content.component';
 
 @NgModule({
   declarations: [
@@ -17,12 +20,15 @@ import { DiretivaNgStyleComponent } from './diretiva-ng-style/diretiva-ng-style.
     DiretivaNgswitchComponent,
     DiretivaNgForComponent,
     DiretivaNgclassComponent,
-    DiretivaNgStyleComponent
+    DiretivaNgStyleComponent,
+    OperadorElvisComponent,
+    ExemploNgContentComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatIconModule
+    MatIconModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
